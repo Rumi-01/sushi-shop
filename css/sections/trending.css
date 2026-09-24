@@ -1,0 +1,167 @@
+/* =========================
+   TRENDING SECTION
+========================= */
+
+.trending {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.trending__content {
+    min-height: 500px;
+
+    padding: 64px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: var(--color-creamson);
+
+    border: 1px solid #e5e5e5;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.trending__content .sushi__subtitle {
+    margin-bottom: 20px;
+}
+
+.trending__content .sushi__title {
+    margin-bottom: 20px;
+}
+
+.trending__content .sushi__description {
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.trending__image {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--color-white);
+
+    border: 1px solid #e5e5e5;
+
+    position: relative;
+}
+
+.trending__image img {
+    width: 60%;
+    max-width: 350px;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   TRENDING LIST
+========================= */
+
+.trending__list {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 40px;
+    row-gap: 15px;
+
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+.trending__list li {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.trending__list-icon {
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.trending__list-icon img {
+    width: 20px;
+    height: 20px;
+
+    object-fit: contain;
+}
+
+.trending__list p {
+    margin: 0;
+
+    font-family: var(--plus-jakarta-sans);
+
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* =========================
+   DISCOVER BUTTON
+========================= */
+
+.trending__discover {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+
+    background: var(--secondary-color);
+
+    color: var(--color-white);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    font-family: var(--plus-jakarta-sans);
+
+    font-size: 16px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    z-index: 10;
+}
